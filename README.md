@@ -5,24 +5,19 @@ A comprehensive web scraper designed to extract interview questions and experien
 ## Project Structure
 
 ```
-tesla_scraper/
+glassdoor_interview_question_extractor_agent/
 ├── code/                           # Source code
-│   ├── enhanced_tesla_scraper.py   # Original Tesla scraper
 │   ├── smart_qa_extractor.py      # Smart Q&A extraction from JSON
 │   ├── docx_generator.py          # DOCX file generation
+│   ├── generate_docx.py           # DOCX generation utility
 │   ├── universal_interview_scraper.py # Universal scraper for any link
 │   └── scrape_any_link.py         # Command-line interface
-├── scraped_data/                   # Output data folder
-│   ├── Tesla/                     # Company-specific folders
-│   ├── Google/                    # Company-specific folders
-│   ├── Microsoft/                 # Company-specific folders
-│   └── *.html                     # Raw HTML for debugging
-├── logs/                          # Log files
-├── venv/                          # Virtual environment
 ├── requirements.txt               # Python dependencies
 ├── interactive_scraper.py         # Interactive mode (recommended)
 ├── scrape_input.py                # Simple input mode
 ├── run_scraper.py                 # Command line mode
+├── USAGE_GUIDE.md                 # Detailed usage instructions
+├── COMPANY_FOLDERS.md             # Company folder structure guide
 └── README.md                      # This file
 ```
 
@@ -34,7 +29,7 @@ tesla_scraper/
 - **📄 DOCX Generation**: Creates beautifully formatted Word documents
 - **📊 Multiple Formats**: Saves data in JSON, CSV, and DOCX formats
 - **🔍 Comprehensive Logging**: Detailed logging for debugging and monitoring
-- **📁 Organized Output**: Clean project structure with dedicated folders
+- **📁 Organized Output**: Clean project structure with company-specific folders
 
 ## Installation
 
@@ -107,7 +102,7 @@ scraped_data/
 - **JSON Files**: Complete interview data with metadata
 - **DOCX Files**: Formatted questions and answers documents
 - **HTML Files**: Raw HTML for debugging (in main folder)
-- **Logs**: Detailed execution logs in `logs/` folder
+- **Logs**: Detailed execution logs (automatically created during scraping)
 
 ## DOCX Document Features
 
@@ -160,9 +155,10 @@ python code/generate_docx.py
 ## Notes
 
 - The scraper automatically handles Cloudflare challenges
-- Data is saved in organized folders for easy access
-- Comprehensive logging helps with debugging
+- Data is saved in organized company-specific folders for easy access
+- Comprehensive logging helps with debugging (logs are created automatically)
 - Respects website terms of service and implements delays
 - Generated DOCX files are ready for sharing and printing
+- Virtual environment and logs are excluded from version control
 
 
