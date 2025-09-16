@@ -46,6 +46,8 @@ pip install -r requirements.txt
 
 ## Usage
 
+> **⚠️ Legal Notice**: Before using this tool, please read the [Legal Disclaimer](#-legal-disclaimer--important-information) section below. By using this tool, you agree to comply with all applicable laws and Glassdoor's Terms of Service.
+
 ### 🎯 Interactive Mode (Recommended)
 ```bash
 python interactive_scraper.py
@@ -152,7 +154,62 @@ python run_scraper.py "https://www.glassdoor.com/Interview/Google-Software-Engin
 python code/generate_docx.py
 ```
 
-## Notes
+## ⚠️ Legal Disclaimer & Important Information
+
+### **Legal Considerations**
+
+This tool is designed for **educational and personal use only**. Users must understand and comply with the following legal requirements:
+
+#### **🔍 Legal Status**
+- **Generally Legal**: For personal/educational use with publicly accessible data
+- **ToS Compliance**: Users must review and comply with Glassdoor's Terms of Service
+- **Jurisdiction**: Users are responsible for following applicable laws in their region
+- **Professional Advice**: Always consult with a legal professional for specific legal guidance
+
+#### **📋 User Responsibilities**
+- ✅ **Personal Use Only**: Use scraped data for individual research and learning
+- ✅ **Review ToS**: Read and understand Glassdoor's Terms of Service
+- ✅ **Respect Privacy**: Don't collect or share personal information inappropriately
+- ✅ **Rate Limiting**: Use the tool responsibly to avoid overwhelming servers
+- ❌ **No Commercial Use**: Do not use for commercial purposes without proper authorization
+- ❌ **No Redistribution**: Do not redistribute large datasets publicly
+
+#### **🛡️ Built-in Legal Safeguards**
+- **Public Data Only**: Only accesses publicly visible interview data
+- **No Authentication Bypass**: Doesn't circumvent login requirements
+- **Rate Limiting**: Implements delays between requests (2-5 seconds)
+- **Educational Purpose**: Clearly designed for learning and research
+- **Transparency**: Open source code for review and verification
+
+#### **⚖️ Legal Precedents**
+- **LinkedIn v. hiQ Labs**: Courts ruled scraping publicly accessible data doesn't violate CFAA
+- **Fair Use Doctrine**: Educational and research purposes are generally protected
+- **Public Data**: Information voluntarily shared by users on public platforms
+
+#### **📊 Risk Assessment**
+| Use Case | Risk Level | Recommendation |
+|----------|------------|----------------|
+| Personal Research | 🟢 Low | Generally safe with proper use |
+| Educational Projects | 🟢 Low | Recommended with disclaimers |
+| Commercial Use | 🔴 High | Requires legal consultation |
+| Data Redistribution | 🔴 High | Not recommended |
+
+### **🚨 Important Warnings**
+
+1. **Terms of Service**: Glassdoor's ToS may prohibit automated data collection
+2. **Data Protection Laws**: GDPR, CCPA, and other privacy laws may apply
+3. **Rate Limiting**: Excessive requests may result in IP blocking
+4. **Legal Changes**: Laws and ToS can change; stay informed
+
+### **📞 Legal Resources**
+- [Glassdoor Terms of Service](https://www.glassdoor.com/about/terms.htm)
+- [GDPR Information](https://gdpr.eu/)
+- [CCPA Information](https://oag.ca.gov/privacy/ccpa)
+- [Web Scraping Legal Guide](https://www.scraperapi.com/blog/is-web-scraping-legal/)
+
+---
+
+## Technical Notes
 
 - The scraper automatically handles Cloudflare challenges
 - Data is saved in organized company-specific folders for easy access
