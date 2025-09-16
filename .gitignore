@@ -1,5 +1,6 @@
 # Virtual Environment
 venv/
+venv*/
 env/
 ENV/
 
@@ -44,3 +45,24 @@ scraped_data/
 # Temporary files
 *.tmp
 *.temp
+
+# API Credentials and Secrets
+*.key
+*.pem
+*.p12
+*.pfx
+*.crt
+*.cer
+*.der
+config.json
+secrets.json
+.env
+.env.local
+.env.production
+.env.staging
+credentials.json
+service-account.json
+api_keys.txt
+secrets.txt
+*.secret
+*.conf
